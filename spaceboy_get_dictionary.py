@@ -30,11 +30,13 @@ pagd = planets_and_gravity_dictionary
 #making our two lists into one dictionary
 pagd = dict(zip(planets, gravity))
 
+print('The list is now\n' + str(planets))
+
 #.Getting the chosen planets matching gravity from dictionary
 planet_gravity = pagd.get(chosen_planet)
 relative_weight = planet_gravity * weight
 
 
-print('The planet you have arrived on is: ' + chosen_planet)
-print('The planet has a gravity of ' + str(planet_gravity) + ' compared to earth')
-print('Your weight is now ' + str(math.ceil(relative_weight)) + ' kg')
+print('\nThe planet you have arrived on is:\n' + chosen_planet)
+print('The planet has a gravity of:\n' + str(planet_gravity))
+print(' Compared to earth, your weight is now:\n' + str(math.ceil(relative_weight)) + ' kg')
